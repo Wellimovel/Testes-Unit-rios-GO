@@ -2,7 +2,7 @@ package main
 
 import "testing"
 
-func TestSoma(t *testing.T) {
+func ShouldSumCorrect(t *testing.T) {
 	teste := soma(3, 2, 1)
 	resultado := 6
 	if teste != resultado {
@@ -11,7 +11,7 @@ func TestSoma(t *testing.T) {
 	}
 }
 
-func TestSoma2(t *testing.T) {
+func ShouldSumIncorrect(t *testing.T) {
 	teste := soma(3, 2, 1)
 	resultado := 7
 	if teste != resultado {
